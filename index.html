@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>The effects of rests when hiking</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>The effects of rests when hiking</h1>
+    <p>By Lance Dy Chua, Royce Dizon, Kenji Chua, Rajon Ng, Isham Dy, and Paulo Pua</p>
+    <p class="small">November 24 2026</p>
+  </header>
+
+  <section class="hero">
+    <img alt="Two students walking along the flagged course" src="images/hero.jpg">
+    <div>
+      <h2>Does a 1-minute rest affect your heart rate while hiking?</h2>
+      <p>We hiked 1 km on two trails twice, once without any rest and once with a 1 minute rest every 200 m. For each
+        trial, we measured our HR every 200 m before and after the rests. We observed no significant difference on the
+        Duran Farm, a light farm trail. On the other hand, it tended to decrease the heart rate on the more challenging
+        Biak-na-Bato trail, though this was not statistically significant.</p>
+      <div class="stats">
+        <p><b>+1.0 bpm</b>with interval rests on Duran Farm</p>
+        <p><b>−5.0 bpm</b>with interval rests on the Biak-na-Bato trail</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Introduction</h2>
+    <p>It is not directly obvious whether stopping makes a hike easier on the heart overall, since the heart rate may
+      rise back to its original shortly after the rest. Our research question asks the effects of a 1-minute rest every
+      200 m compared to hiking without stopping. By using two different trails, we can see how the difficulty of the
+      trail may affect the difference between rest and no rest.</p>
+    <figure id="fig-1">
+      <div class="grid">
+        <img alt="The flagged course across the field at Duran Farm" src="images/trail-farm.jpg">
+        <img alt="Students walking along a path lined with bamboo and trees at Biak-na-Bato National Park"
+             src="images/trail-biak.jpg">
+      </div>
+      <figcaption><b>Figure 1.</b> The trails in Duran Farm and Biak-na-Bato National Park</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Method</h2>
+
+    <p>In order to compare the hikes fairly, we used the average of the readings taken while moving (200 m to 1000 m),
+      without including the heart rate directly after the rest.</p>
+    <p>For each subject, the heart rate was read from the same fitness tracker at:</p>
+    <ol>
+      <li>The resting heart rate</li>
+      <li>Directly before the hike</li>
+      <li>At every 200 m mark</li>
+      <li>After each rest</li>
+    </ol>
+    <p>This was repeated twice on both trails and results were recorded on a phone. To analyze the data, we used a
+      t-test.</p>
+  </section>
+
+  <section>
+    <h2>Results</h2>
+    <p>Resting made no difference on the farm and tended to lower heart rate on Biak-na-Bato (<a href="#table-1">Table
+      1</a>). The effect of resting differed between the trails by 6.0 bpm (p = 0.02).</p>
+    <p>No difference was observed on the farm but resting slightly lowered the average heart rate on Biak-na-Bato, by
+      5.0 bpm. This was not statistically significant (p = 0.21).</p>
+    <figure id="table-1">
+      <figcaption><b>Table 1.</b> Mean heart rate while moving (in bpm)</figcaption>
+      <div class="scroll">
+        <table>
+          <thead>
+          <tr>
+            <th>Trail</th>
+            <th>No rest</th>
+            <th>Rest</th>
+            <th>Effect of resting</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Duran Farm</td>
+            <td>106.7</td>
+            <td>107.7</td>
+            <td>+1.0 (p = 0.76)</td>
+          </tr>
+          <tr>
+            <td>Biak-na-Bato</td>
+            <td>115.3</td>
+            <td>110.3</td>
+            <td>−5.0 (p = 0.21)</td>
+          </tr>
+          <tr>
+            <td>Difference between trails (Biak − farm)</td>
+            <td>+8.6 (p = 0.005)</td>
+            <td>+2.6 (p = 0.43)</td>
+            <td>−6.0 (p = 0.02)</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </figure>
+
+    <figure id="fig-2">
+
+      <figcaption><b>Figure 2.</b> Mean heart rate of the 5 subjects at each 200 m mark. Graph template is from Holtz <a
+          href="#ref-4">[4]</a>.
+      </figcaption>
+      <div class="grid">
+        <object aria-label="Duran Farm: mean heart rate at each 200 m mark, no rest vs rest" data="figures/fig2-duran-farm.svg"
+                type="image/svg+xml">Duran Farm: mean heart rate
+          at each 200 m mark, no rest vs rest
+        </object>
+        <object aria-label="Biak-na-Bato: mean heart rate at each 200 m mark, no rest vs rest" data="figures/fig2-biak-na-bato.svg"
+                type="image/svg+xml">Biak-na-Bato: mean heart
+          rate at each 200 m mark, no rest vs rest
+        </object>
+      </div>
+      <p class="legend"><span class="g">●</span> No rest &nbsp; <span class="r">●</span> Rest</p>
+
+    </figure>
+    <p>In <a href="#fig-2">Figure 2</a>, both lines on Duran Farm closely follow each other for the whole 1000 m . On
+      Biak-na-Bato, both lines are close at 200 m, however the no-rest line continued to increase up to 125 bpm by 400m
+      while the rest line stayed ~18bpm lower. Eventually, both lines met at around the same spot at 800 m and 1000 m.
+    </p>
+
+    <p>On Biak-na-Bato, resting lowered the heart rate more than on Duran Farm for all subjects (<a href="#table-a1">Table
+      A1</a>). Each 1-minute rest dropped heart rate by about 22 bpm on Duran Farm and 25 bpm on Biak-na-Bato, however
+      it climbs back close to the heart rate before the rest by the next reading.</p>
+  </section>
+
+  <section>
+    <h2>Discussion</h2>
+    <p>On Duran Farm, the drop in heart rate caused by each rest immediately rose back up within the next 200 m, which
+      meant that resting simply added time with no affect on the average heart rate. On Biak-na-Bato, the no-rest hike
+      spiked while the rest hike stayed lower through the challenging part of the trail.</p>
+    <p>We noticed that resting seems to matter once the difficulty is enough for the heart rate to climb fast. For a
+      challenging hike, a rest can be useful on the climbs with minimal effect on flat ground. We were unable to measure
+      slope and elevation directly, and this observation is based on the perceived difficulty of the hike rather than an
+      exact elevation reading.</p>
+    <p>On both trails we tested, the heart rate stayed moderate as expected. The highest single reading was 145 bpm,
+      which is only ~71% of the estimated maximum for a 17 year old (220 - age) <a href="#ref-1">[1]</a>, within the
+      64–76% range usually called moderate intensity <a href="#ref-3">[3]</a>.
+  </section>
+
+  <section>
+    <h2>Limitations</h2>
+    <p>Given the small sample size of five subjects, the results in this experiment are certainly not definitive. Only
+      the difference between trails and the larger effect of resting on Biak-na-Bato reached p &lt; 0.05.</p>
+    <p>We also noticed that rest hikes on the farm started about 6 bpm lower than no-rest hikes, which may suggest that
+      the order of the hikes affected the results. It is also noted that wrist sensors are not as accurate on inclines,
+      especially while moving, and relying on a single reading can be noisy. We were also unable to control the hiking
+      speed and only relied on the distance measured on the watch.</p>
+  </section>
+
+  <section>
+    <h2>Conclusion</h2>
+    <p>Resting every 200 m made no difference on the easier Duran Farm trail, but tended to keep heart rate about 5 bpm
+      lower on the harder Biak-na-Bato trail, although this was not statistically significant. A future experiment
+      should test longer hikes and steeper trails, with more subjects, quantitative measurements of elevation gain, and
+      controlled walking speed.</p>
+  </section>
+
+  <section>
+    <h2>References</h2>
+    <p class="small"><span id="ref-1">[1] Robergs, R. A., &amp; Landwehr, R. (2002). The surprising history of the "HRmax=220-age" equation. <i>Journal of Exercise Physiology online, 5</i>(2). <a
+        href="http://www.asep.org/asep/asep/Robergs2.pdf">http://www.asep.org/asep/asep/Robergs2.pdf</a></span><br>
+      <span id="ref-2">[2] Tanaka, H., Monahan, K. D., &amp; Seals, D. R. (2001). Age-predicted maximal heart rate revisited. <i>Journal of the American College of Cardiology, 37</i>(1), 153–156. <a
+          href="https://pubmed.ncbi.nlm.nih.gov/11153730/">https://pubmed.ncbi.nlm.nih.gov/11153730/</a></span><br>
+      <span id="ref-3">[3] Harvard Health Publishing. (2023, June 1). All about your heart rate. <a
+          href="https://www.health.harvard.edu/heart-health/all-about-your-heart-rate">https://www.health.harvard.edu/heart-health/all-about-your-heart-rate</a></span><br>
+      <span id="ref-4">[4] Holtz, Y. (n.d.). Customizing line charts with Pandas. The Python Graph Gallery. <a
+          href="https://python-graph-gallery.com/531-customizing-linecharts-with-pandas/">https://python-graph-gallery.com/531-customizing-linecharts-with-pandas/</a></span>
+    </p>
+  </section>
+
+  <section>
+    <details>
+      <summary><h2>Data and evidence</h2></summary>
+      <figure>
+        <div class="grid tall">
+          <img alt="Wrist band showing a heart rate of 94 BPM" src="images/band-1.jpg">
+          <img alt="Wrist band showing a heart rate of 98 BPM" src="images/band-2.jpg">
+          <img alt="A student walking down wooden steps on the trail" src="images/trail.jpg">
+        </div>
+        <figcaption><b>Figure A1.</b> Heart-rate readings and one of the students on the trail</figcaption>
+      </figure>
+      <figure id="table-a1">
+        <figcaption><b>Table A1.</b> Mean heart rate while moving for each subject and resting heart rate in bpm. <a
+            href="data/hike_data.xlsx">Full data</a>.
+        </figcaption>
+        <div class="scroll">
+          <table>
+            <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Resting</th>
+              <th>Farm, no rest</th>
+              <th>Farm, rest</th>
+              <th>Biak, no rest</th>
+              <th>Biak, rest</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>72</td>
+              <td>122.6</td>
+              <td>121.6</td>
+              <td>131.0</td>
+              <td>120.6</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>63</td>
+              <td>91.0</td>
+              <td>92.0</td>
+              <td>102.2</td>
+              <td>102.2</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>67</td>
+              <td>105.0</td>
+              <td>115.6</td>
+              <td>112.0</td>
+              <td>113.6</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>70</td>
+              <td>122.2</td>
+              <td>113.8</td>
+              <td>126.0</td>
+              <td>110.4</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>62</td>
+              <td>92.6</td>
+              <td>95.4</td>
+              <td>105.4</td>
+              <td>104.6</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </figure>
+    </details>
+  </section>
+
+</main>
+</body>
+</html>

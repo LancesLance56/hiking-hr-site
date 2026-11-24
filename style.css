@@ -1,0 +1,172 @@
+:root {
+  --text: #111;
+  --muted: #5c5c5c;
+  --accent: #1f5a96;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 16px/1.65 Inter, sans-serif;
+  color: #333;
+}
+
+main {
+  max-width: 816px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+h1, h2, p, figure, ol {
+  margin: 0;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--text);
+}
+
+section, figure, header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+figcaption, .small {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+section > figure {
+  margin-top: 12px;
+}
+
+b {
+  font-weight: 600;
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 22px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #f3f3f3;
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary h2 {
+  display: inline;
+}
+
+details > :not(summary) {
+  margin-top: 12px;
+}
+
+[id] {
+  scroll-margin-top: 24px;
+}
+
+.tall img {
+  aspect-ratio: 3 / 4;
+}
+
+.hero {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: center;
+}
+
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hero h2 {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.hero img, .hero .ph {
+  aspect-ratio: 1;
+}
+
+.stats {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.stats b {
+  display: block;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+object {
+  display: block;
+  width: 100%;
+  aspect-ratio: 340 / 260;
+}
+
+.legend {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.g {
+  color: #6b6b6b;
+}
+
+.r {
+  color: var(--accent);
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  padding: 6px 12px 6px 0;
+  text-align: left;
+  white-space: nowrap;
+}
